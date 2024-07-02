@@ -2,7 +2,7 @@ from datetime import datetime
 import pytz
 
 # Quick GPT generated
-def convert_and_format_time(datetime_str, local_timezone='Europe/Oslo'):
+def convert_and_format_time(datetime_str: str, local_timezone='Europe/Oslo') -> str:
     utc_zone = pytz.utc
 
     utc_time = datetime.strptime(datetime_str, "%Y-%m-%dT%H:%M:%SZ")
